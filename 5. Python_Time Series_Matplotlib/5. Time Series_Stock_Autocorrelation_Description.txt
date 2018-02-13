@@ -1,0 +1,3 @@
+Download monthly adjusted close price from Yahoo for AAPL, BBRY, LULU, AMZN.
+
+Use matplotlib.pyplot.acorr() to plot the autocorrelation of each of the stocks.

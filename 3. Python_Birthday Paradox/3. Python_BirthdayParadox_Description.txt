@@ -1,0 +1,2 @@
+Birthday paradox concerns the probability: If there are 45 students in the class, 
+what are the chances that two of you have the same birthday?

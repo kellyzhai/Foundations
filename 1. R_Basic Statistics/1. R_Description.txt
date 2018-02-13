@@ -1,0 +1,12 @@
+
+1. Load the nutshell package and mort06.smpl dataset 
+
+2. It contains information of mortality 243,073 observations 
+
+3. Generate the sample mean, median,  1st and 3 and 3and 3rd quartile and trimmed mean (excluding 15% of the data symmetrically) of the age variable
+
+4. Generate the sample std std, variance, IQR, range for age 
+
+5. Use a contingency table to investigate the relationship between ¡°Sex¡± and Cause¡± 
+
+6. Use the prop.table function with the proper margin argument to generate and compare the percentages different causes between male and female
