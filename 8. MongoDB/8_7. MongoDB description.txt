@@ -1,0 +1,4 @@
+Read and RUN all insert, find, update, remove and aggregate
+subsections. (here instead of mongoimport, just use 10-20 items
+from primer-dataset.json and use insert to add them to your
+collection).

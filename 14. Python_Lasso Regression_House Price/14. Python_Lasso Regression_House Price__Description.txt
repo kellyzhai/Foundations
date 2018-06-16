@@ -1,0 +1,8 @@
+Build full pipeline for the data analysis following the example of the notebook.
+
+
+Building pipeline:
+Split data into training and testing sets below.
+Convert all categorical data to one-hot vectors below
+Normalize all non-categorical data
+Perform Lasso-based regression using a variety of values for ¦Á¦Á between 0 and 1 via a grid search where housing_labels is the output and all other features are the input 

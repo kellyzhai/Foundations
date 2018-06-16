@@ -1,0 +1,48 @@
+Cluster0-shard-0:PRIMARY> db.restaurants.update(
+...     { "name" : "Wendy'S" },
+...     {
+...       $set: { "cuisine": "American (New)" }
+...
+...     }
+... )
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+--------------------------------------------------------------
+Cluster0-shard-0:PRIMARY> db.restaurants.update(
+...   { "restaurant_id" : "41704620" },
+...   { $set: { "address.street": "East 31st Street" } }
+... )
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+Cluster0-shard-0:PRIMARY>
+
+---------------------------------------------------------------
+
+Cluster0-shard-0:PRIMARY> db.restaurants.update(
+...   { "address.zipcode": "11225"},
+...   {
+...     $set: { cuisine: "Category To Be Determined" },
+...     $currentDate: { "lastModified": true }
+...   },
+...   { multi: true}
+... )
+WriteResult({ "nMatched" : 4, "nUpserted" : 0, "nModified" : 4 })
+
+-------------------------------------------------------------------
+Cluster0-shard-0:PRIMARY> db.restaurants.update(
+...    { "restaurant_id" : "40356649" },
+...    {
+...      "name" : "Vella 2",
+...      "address" : {
+...               "coord" : [ -73.9557413, 40.7720266 ],
+...               "building" : "1480",
+...               "street" : "2 Avenue",
+...               "zipcode" : "10075"
+...      }
+...    }
+... )
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+Cluster0-shard-0:PRIMARY>
+
+
+
+

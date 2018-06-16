@@ -1,0 +1,15 @@
+Cluster0-shard-0:PRIMARY> db.restaurants.remove( { "borough": "Manhattan" } )
+WriteResult({ "nRemoved" : 6 })
+
+---------------------------------------------------------------------------
+Cluster0-shard-0:PRIMARY> db.restaurants.remove( { "borough": "Queens" }, { justOne: true } )
+WriteResult({ "nRemoved" : 1 })
+
+--------------------------------------------------------------------------
+Cluster0-shard-0:PRIMARY> db.restaurants.remove( { } )
+WriteResult({ "nRemoved" : 32 })
+
+--------------------------------------------------------------------------
+Cluster0-shard-0:PRIMARY> db.restaurants.drop()
+true
+

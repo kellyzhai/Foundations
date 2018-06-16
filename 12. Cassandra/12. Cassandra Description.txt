@@ -1,0 +1,6 @@
+Prerequisites: Setup Cassandra (Installation Instructions already provided)
+Objectives : Understand how to design Data Model for Cassandra using Chebotko Diagrams
+Deliverables: There are 2 deliverables.
+
+1. Draw Logical Data Model using Chebotko Diagram
+2. cql file that creates the keyspace,tables, types as required (Add 2 rows of any sample data for all the tables created)

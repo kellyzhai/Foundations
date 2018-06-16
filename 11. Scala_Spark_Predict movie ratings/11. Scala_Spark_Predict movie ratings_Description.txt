@@ -1,0 +1,7 @@
+Input dataset:
+
+/databricks-datasets/Rdatasets/data-001/csv/ggplot2/movies.csv
+
+Using the Apache Spark ML pipeline, build a model to predict the rating of a movie based on the available features. How would you handle non-numerical data?
+
+Information about the dataset:

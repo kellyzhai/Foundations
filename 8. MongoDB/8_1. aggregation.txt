@@ -1,0 +1,21 @@
+Cluster0-shard-0:PRIMARY> db.restaurants.aggregate(
+...    [
+...      { $group: { "_id": "$borough", "count": { $sum: 1 } } }
+...    ]
+... )
+{ "_id" : null, "count" : 1 }
+{ "_id" : "Manhattan", "count" : 6 }
+{ "_id" : "Staten Island", "count" : 4 }
+{ "_id" : "Brooklyn", "count" : 19 }
+{ "_id" : "Bronx", "count" : 1 }
+{ "_id" : "Queens", "count" : 8 }
+
+------------------------------------------------------------------------
+Cluster0-shard-0:PRIMARY> db.restaurants.aggregate(
+...    [
+...      { $match: { "borough": "Queens", "cuisine": "Jewish/Kosher" } },
+...      { $group: { "_id": "$address.zipcode" , "count": { $sum: 1 } } }
+...    ]
+... )
+{ "_id" : "11374", "count" : 4 }
+Cluster0-shard-0:PRIMARY>

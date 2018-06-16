@@ -1,0 +1,59 @@
+CREATE KEYSPACE mykeyspace  WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
+
+
+Q1:
+
+cqlsh:a5> create table universities_near_people(person_id  int,distance   int,university_id int,university_name text,university_phone text,university_address text,primary key((person_id,distance)));
+cqlsh:a5> describe table universities_near_people 
+cqlsh:a5> insert into universities_near_people(person_id,distance,university_id,university_name,university_phone,university_address) Values(1,20,101,'UOT','6479890638','Toronto');
+cqlsh:a5> insert into universities_near_people(person_id,distance,university_id,university_name,university_phone,university_address) Values(2,10,202,'York University','6479890156','Toronto');
+cqlsh:a5> select * from universities_near_people where person_id=1 and distance in (10,20)
+
+
+
+
+
+Q2:
+
+cqlsh:a5> create table universities(university_id int,university_name text,university_phone text,university_address text,primary key(university_id));
+cqlsh:a5> describe table universities
+cqlsh:a5> insert into universities(university_id,university_name,university_phone,university_address) Values(101,'UOT','6479890638','Toronto');
+cqlsh:a5> insert into universities(university_id,university_name,university_phone,university_address) Values(202,'York University','6479890156','Toronto');
+cqlsh:a5> select * from universities where university_id=202;
+
+
+
+
+
+
+Q3:
+
+cqlsh:a5> create table interested_people_near_universities(university_id int,distance int,person_name text,person_id int,primary key(university_id,distance));
+cqlsh:a5> describe interested_people_near_universities
+cqlsh:a5> insert into interested_people_near_universities(university_id,distance,person_name,person_id) Values(101,20,'Kelly',1);
+cqlsh:a5> insert into interested_people_near_universities(university_id,distance,person_name,person_id) Values(202,10,'William',2);
+cqlsh:a5> select person_name from interested_people_near_universities where university_id=101 and distance in(10,20);
+
+
+Q4:
+
+
+cqlsh:a5>create index university_index on universities_near_people(university_id);
+cqlsh:a5>create table courses_in_universities(university_id int,course_id int,course_registration_date date,course_name text,course_cost int,primary key((university_id,course_registration_date)));
+cqlsh:a5>insert into  courses_in_universities(university_id,course_id,course_registration_date,course_name,course_cost) Values(101,1011,'2018-1-1','Data Science',980);
+cqlsh:a5>insert into  courses_in_universities(university_id,course_id,course_registration_date,course_name,course_cost) Values(102,1021,'2018-1-2','Data Science',989);
+
+
+
+
+cqlsh:a5> create table people(person_id int,person_name text,person_phone text,person_address text,primary key(person_id));
+cqlsh:a5> insert into people(person_id,person_name,person_phone,person_address) Values(1,'Kelly','6479890638','Toronto');
+cqlsh:a5> insert into people(person_id,person_name,person_phone,person_address) Values(2,'William','6479890156','Toronto');
+
+
+
+
+
+
+
+

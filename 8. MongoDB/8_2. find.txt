@@ -1,0 +1,443 @@
+Cluster0-shard-0:PRIMARY> db.restaurants.find()
+{ "_id" : ObjectId("59d1b9c5eef10bdbf94f186d"), "address" : { "street" : "2 Avenue", "zipcode" : "10075", "building" : "1480", "coord" : [ -73.9557413, 40.7720266 ] }, "borough" : "Manhattan", "cuisine" : "Italian", "grades" : [ { "date" : ISODate("2014-10-01T00:00:00Z"), "grade" : "A", "score" : 11 }, { "date" : ISODate("2014-01-16T00:00:00Z"), "grade" : "B", "score" : 17 } ], "name" : "Vella", "restaurant_id" : "41704620" }
+{ "_id" : ObjectId("59d1c140eef10bdbf94f186e"), "address" : { "street" : "2 Avenue", "zipcode" : "10075", "building" : "1480", "coord" : [ -73.9557413, 40.7720266 ] }, "borough" : "Manhattan", "cuisine" : "Italian", "grades" : [ { "date" : ISODate("2014-10-01T00:00:00Z"), "grade" : "A", "score" : 11 }, { "date" : ISODate("2014-01-16T00:00:00Z"), "grade" : "B", "score" : 17 } ], "name" : "Vella", "restaurant_id" : "41704620" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb97"), "address" : { "building" : "469", "coord" : [ -73.961704, 40.662942 ], "street" : "Flatbush Avenue", "zipcode" : "11225" }, "borough" : "Brooklyn", "cuisine" : "Category To Be Determined", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "B", "score" : 23 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Wendy'S", "restaurant_id" : "30112340", "lastModified" : ISODate("2017-10-03T02:05:02.045Z") }
+{ "_id" : ObjectId("59d2deee41754835b13bcb98"), "address" : { "building" : "351", "coord" : [ -73.98513559999999, 40.7676919 ], "street" : "West   57 Street", "zipcode" : "10019" }, "borough" : "Manhattan", "cuisine" : "Irish", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Dj Reynolds Pub And Restaurant", "restaurant_id" : "30191841" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb99"), "address" : { "building" : "2780", "coord" : [ -73.98241999999999, 40.579505 ], "street" : "Stillwell Avenue", "zipcode" : "11224" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 5 }, { "date" : "11-09-2017", "grade" : "A", "score" : 7 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Riviera Caterer", "restaurant_id" : "40356018" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9a"), "address" : { "building" : "97-22", "coord" : [ -73.8601152, 40.7311739 ], "street" : "63 Road", "zipcode" : "11374" }, "borough" : "Queens", "cuisine" : "Jewish/Kosher", "grades" : [ { "date" : "11-09-2017", "grade" : "Z", "score" : 20 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 }, { "date" : "11-09-2017", "grade" : "B", "score" : 25 } ], "name" : "Tov Kosher Kitchen", "restaurant_id" : "40356068" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9b"), "address" : { "building" : "8825", "coord" : [ -73.8803827, 40.7643124 ], "street" : "Astoria Boulevard", "zipcode" : "11369" }, "borough" : "Queens", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "Z", "score" : 38 }, { "date" : "11-09-2017", "grade" : "A", "score" : 10 }, { "date" : "11-09-2017", "grade" : "A", "score" : 7 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 } ], "name" : "Brunos On The Boulevard", "restaurant_id" : "40356151" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9c"), "address" : { "building" : "2206", "coord" : [ -74.1377286, 40.6119572 ], "street" : "Victory Boulevard", "zipcode" : "10314" }, "borough" : "Staten Island", "cuisine" : "Jewish/Kosher", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 9 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 9 } ], "name" : "Kosher Island", "restaurant_id" : "40356442" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9d"), "address" : { "building" : "7114", "coord" : [ -73.9068506, 40.6199034 ], "street" : "Avenue U", "zipcode" : "11234" }, "borough" : "Brooklyn", "cuisine" : "Delicatessen", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 10 }, { "date" : "11-09-2017", "grade" : "A", "score" : 10 }, { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "A", "score" : 10 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 }, { "date" : "11-09-2017", "grade" : "A", "score" : 9 } ], "name" : "Wilken'S Fine Food", "restaurant_id" : "40356483" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9e"), "address" : { "building" : "6409", "coord" : [ -74.00528899999999, 40.628886 ], "street" : "11 Avenue", "zipcode" : "11219" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 }, { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 } ], "name" : "Regina Caterers", "restaurant_id" : "40356649" }
+Type "it" for more
+
+------------------------------------------------------------------------------------------
+
+Cluster0-shard-0:PRIMARY> db.restaurants.find( { "borough": "Manhattan" } ).pretty()
+{
+        "_id" : ObjectId("59d1b9c5eef10bdbf94f186d"),
+        "address" : {
+                "street" : "2 Avenue",
+                "zipcode" : "10075",
+                "building" : "1480",
+                "coord" : [
+                        -73.9557413,
+                        40.7720266
+                ]
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Italian",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-10-01T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2014-01-16T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 17
+                }
+        ],
+        "name" : "Vella",
+        "restaurant_id" : "41704620"
+}
+{
+        "_id" : ObjectId("59d1c140eef10bdbf94f186e"),
+        "address" : {
+                "street" : "2 Avenue",
+                "zipcode" : "10075",
+                "building" : "1480",
+                "coord" : [
+                        -73.9557413,
+                        40.7720266
+                ]
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Italian",
+        "grades" : [
+                {
+                        "date" : ISODate("2014-10-01T00:00:00Z"),
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : ISODate("2014-01-16T00:00:00Z"),
+                        "grade" : "B",
+                        "score" : 17
+                }
+        ],
+        "name" : "Vella",
+        "restaurant_id" : "41704620"
+}
+{
+        "_id" : ObjectId("59d2deee41754835b13bcb98"),
+        "address" : {
+                "building" : "351",
+                "coord" : [
+                        -73.98513559999999,
+                        40.7676919
+                ],
+                "street" : "West   57 Street",
+                "zipcode" : "10019"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Irish",
+        "grades" : [
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 12
+                }
+        ],
+        "name" : "Dj Reynolds Pub And Restaurant",
+        "restaurant_id" : "30191841"
+}
+{
+        "_id" : ObjectId("59d2ebec8938d50cf8b8fda4"),
+        "address" : {
+                "building" : "351",
+                "coord" : [
+                        -73.98513559999999,
+                        40.7676919
+                ],
+                "street" : "West   57 Street",
+                "zipcode" : "10019"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Irish",
+        "grades" : [
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 12
+                }
+        ],
+        "name" : "Dj Reynolds Pub And Restaurant",
+        "restaurant_id" : "30191841"
+}
+{
+        "_id" : ObjectId("59d30bb055713c268f611968"),
+        "address" : {
+                "building" : "351",
+                "coord" : [
+                        -73.98513559999999,
+                        40.7676919
+                ],
+                "street" : "West   57 Street",
+                "zipcode" : "10019"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Irish",
+        "grades" : [
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 12
+                }
+        ],
+        "name" : "Dj Reynolds Pub And Restaurant",
+        "restaurant_id" : "30191841"
+}
+{
+        "_id" : ObjectId("59d30d4ee5111c47e8f0db5f"),
+        "address" : {
+                "building" : "351",
+                "coord" : [
+                        -73.98513559999999,
+                        40.7676919
+                ],
+                "street" : "West   57 Street",
+                "zipcode" : "10019"
+        },
+        "borough" : "Manhattan",
+        "cuisine" : "Irish",
+        "grades" : [
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 2
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 11
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 12
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 12
+                }
+        ],
+        "name" : "Dj Reynolds Pub And Restaurant",
+        "restaurant_id" : "30191841"
+}
+
+----------------------------------------------------------------------------------------------------
+
+Cluster0-shard-0:PRIMARY> db.restaurants.find( { "address.zipcode": "10075" } )
+{ "_id" : ObjectId("59d1b9c5eef10bdbf94f186d"), "address" : { "street" : "2 Avenue", "zipcode" : "10075", "building" : "1480", "coord" : [ -73.9557413, 40.7720266 ] }, "borough" : "Manhattan", "cuisine" : "Italian", "grades" : [ { "date" : ISODate("2014-10-01T00:00:00Z"), "grade" : "A", "score" : 11 }, { "date" : ISODate("2014-01-16T00:00:00Z"), "grade" : "B", "score" : 17 } ], "name" : "Vella", "restaurant_id" : "41704620" }
+{ "_id" : ObjectId("59d1c140eef10bdbf94f186e"), "address" : { "street" : "2 Avenue", "zipcode" : "10075", "building" : "1480", "coord" : [ -73.9557413, 40.7720266 ] }, "borough" : "Manhattan", "cuisine" : "Italian", "grades" : [ { "date" : ISODate("2014-10-01T00:00:00Z"), "grade" : "A", "score" : 11 }, { "date" : ISODate("2014-01-16T00:00:00Z"), "grade" : "B", "score" : 17 } ], "name" : "Vella", "restaurant_id" : "41704620" }
+
+-----------------------------------------------------------------------------------------------------
+
+Cluster0-shard-0:PRIMARY> db.restaurants.find( { "grades.grade": "B" } )
+{ "_id" : ObjectId("59d1b9c5eef10bdbf94f186d"), "address" : { "street" : "2 Avenue", "zipcode" : "10075", "building" : "1480", "coord" : [ -73.9557413, 40.7720266 ] }, "borough" : "Manhattan", "cuisine" : "Italian", "grades" : [ { "date" : ISODate("2014-10-01T00:00:00Z"), "grade" : "A", "score" : 11 }, { "date" : ISODate("2014-01-16T00:00:00Z"), "grade" : "B", "score" : 17 } ], "name" : "Vella", "restaurant_id" : "41704620" }
+{ "_id" : ObjectId("59d1c140eef10bdbf94f186e"), "address" : { "street" : "2 Avenue", "zipcode" : "10075", "building" : "1480", "coord" : [ -73.9557413, 40.7720266 ] }, "borough" : "Manhattan", "cuisine" : "Italian", "grades" : [ { "date" : ISODate("2014-10-01T00:00:00Z"), "grade" : "A", "score" : 11 }, { "date" : ISODate("2014-01-16T00:00:00Z"), "grade" : "B", "score" : 17 } ], "name" : "Vella", "restaurant_id" : "41704620" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb97"), "address" : { "building" : "469", "coord" : [ -73.961704, 40.662942 ], "street" : "Flatbush Avenue", "zipcode" : "11225" }, "borough" : "Brooklyn", "cuisine" : "Category To Be Determined", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "B", "score" : 23 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Wendy'S", "restaurant_id" : "30112340", "lastModified" : ISODate("2017-10-03T02:05:02.045Z") }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9a"), "address" : { "building" : "97-22", "coord" : [ -73.8601152, 40.7311739 ], "street" : "63 Road", "zipcode" : "11374" }, "borough" : "Queens", "cuisine" : "Jewish/Kosher", "grades" : [ { "date" : "11-09-2017", "grade" : "Z", "score" : 20 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 }, { "date" : "11-09-2017", "grade" : "B", "score" : 25 } ], "name" : "Tov Kosher Kitchen", "restaurant_id" : "40356068" }
+{ "_id" : ObjectId("59d2ebec8938d50cf8b8fda3"), "address" : { "building" : "469", "coord" : [ -73.961704, 40.662942 ], "street" : "Flatbush Avenue", "zipcode" : "11225" }, "borough" : "Brooklyn", "cuisine" : "Category To Be Determined", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "B", "score" : 23 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Wendy'S", "restaurant_id" : "30112340", "lastModified" : ISODate("2017-10-03T02:05:02.045Z") }
+{ "_id" : ObjectId("59d2ebec8938d50cf8b8fda6"), "address" : { "building" : "97-22", "coord" : [ -73.8601152, 40.7311739 ], "street" : "63 Road", "zipcode" : "11374" }, "borough" : "Queens", "cuisine" : "Jewish/Kosher", "grades" : [ { "date" : "11-09-2017", "grade" : "Z", "score" : 20 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 }, { "date" : "11-09-2017", "grade" : "B", "score" : 25 } ], "name" : "Tov Kosher Kitchen", "restaurant_id" : "40356068" }
+{ "_id" : ObjectId("59d30bb055713c268f611967"), "address" : { "building" : "469", "coord" : [ -73.961704, 40.662942 ], "street" : "Flatbush Avenue", "zipcode" : "11225" }, "borough" : "Brooklyn", "cuisine" : "Hamburgers", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "B", "score" : 23 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Wendy'S", "restaurant_id" : "30112340" }
+{ "_id" : ObjectId("59d30bb055713c268f61196a"), "address" : { "building" : "97-22", "coord" : [ -73.8601152, 40.7311739 ], "street" : "63 Road", "zipcode" : "11374" }, "borough" : "Queens", "cuisine" : "Jewish/Kosher", "grades" : [ { "date" : "11-09-2017", "grade" : "Z", "score" : 20 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 }, { "date" : "11-09-2017", "grade" : "B", "score" : 25 } ], "name" : "Tov Kosher Kitchen", "restaurant_id" : "40356068" }
+{ "_id" : ObjectId("59d30d4ee5111c47e8f0db5d"), "address" : { "building" : "1007", "coord" : [ -73.856077, 40.848447 ], "street" : "Morris Park Ave", "zipcode" : "10462" }, "borough" : "Bronx", "cuisine" : "Bakery", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 6 }, { "date" : "11-09-2017", "grade" : "A", "score" : 10 }, { "date" : "11-09-2017", "grade" : "A", "score" : 9 }, { "date" : "11-09-2017", "grade" : "B", "score" : 14 } ], "name" : "Morris Park Bake Shop", "restaurant_id" : "30075445" }
+{ "_id" : ObjectId("59d30d4ee5111c47e8f0db5e"), "address" : { "building" : "469", "coord" : [ -73.961704, 40.662942 ], "street" : "Flatbush Avenue", "zipcode" : "11225" }, "borough" : "Brooklyn", "cuisine" : "Hamburgers", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "B", "score" : 23 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Wendy'S", "restaurant_id" : "30112340" }
+Type "it" for more
+
+--------------------------------------------------------------------------------------------------------
+Cluster0-shard-0:PRIMARY> db.restaurants.find( { "grades.score": { $gt: 30 } } ).pretty()
+{
+        "_id" : ObjectId("59d2deee41754835b13bcb9b"),
+        "address" : {
+                "building" : "8825",
+                "coord" : [
+                        -73.8803827,
+                        40.7643124
+                ],
+                "street" : "Astoria Boulevard",
+                "zipcode" : "11369"
+        },
+        "borough" : "Queens",
+        "cuisine" : "American",
+        "grades" : [
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "Z",
+                        "score" : 38
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Brunos On The Boulevard",
+        "restaurant_id" : "40356151"
+}
+{
+        "_id" : ObjectId("59d2ebec8938d50cf8b8fda7"),
+        "address" : {
+                "building" : "8825",
+                "coord" : [
+                        -73.8803827,
+                        40.7643124
+                ],
+                "street" : "Astoria Boulevard",
+                "zipcode" : "11369"
+        },
+        "borough" : "Queens",
+        "cuisine" : "American",
+        "grades" : [
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "Z",
+                        "score" : 38
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Brunos On The Boulevard",
+        "restaurant_id" : "40356151"
+}
+{
+        "_id" : ObjectId("59d30bb055713c268f61196b"),
+        "address" : {
+                "building" : "8825",
+                "coord" : [
+                        -73.8803827,
+                        40.7643124
+                ],
+                "street" : "Astoria Boulevard",
+                "zipcode" : "11369"
+        },
+        "borough" : "Queens",
+        "cuisine" : "American",
+        "grades" : [
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "Z",
+                        "score" : 38
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Brunos On The Boulevard",
+        "restaurant_id" : "40356151"
+}
+{
+        "_id" : ObjectId("59d30d4ee5111c47e8f0db62"),
+        "address" : {
+                "building" : "8825",
+                "coord" : [
+                        -73.8803827,
+                        40.7643124
+                ],
+                "street" : "Astoria Boulevard",
+                "zipcode" : "11369"
+        },
+        "borough" : "Queens",
+        "cuisine" : "American",
+        "grades" : [
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "Z",
+                        "score" : 38
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 10
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 7
+                },
+                {
+                        "date" : "11-09-2017",
+                        "grade" : "A",
+                        "score" : 13
+                }
+        ],
+        "name" : "Brunos On The Boulevard",
+        "restaurant_id" : "40356151"
+}
+
+---------------------------------------------------------------------------------------------------
+
+Cluster0-shard-0:PRIMARY> db.restaurants.find( { "grades.score": { $lt: 10 } } )
+{ "_id" : ObjectId("59d2deee41754835b13bcb97"), "address" : { "building" : "469", "coord" : [ -73.961704, 40.662942 ], "street" : "Flatbush Avenue", "zipcode" : "11225" }, "borough" : "Brooklyn", "cuisine" : "Category To Be Determined", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "B", "score" : 23 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Wendy'S", "restaurant_id" : "30112340", "lastModified" : ISODate("2017-10-03T02:05:02.045Z") }
+{ "_id" : ObjectId("59d2deee41754835b13bcb98"), "address" : { "building" : "351", "coord" : [ -73.98513559999999, 40.7676919 ], "street" : "West   57 Street", "zipcode" : "10019" }, "borough" : "Manhattan", "cuisine" : "Irish", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Dj Reynolds Pub And Restaurant", "restaurant_id" : "30191841" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb99"), "address" : { "building" : "2780", "coord" : [ -73.98241999999999, 40.579505 ], "street" : "Stillwell Avenue", "zipcode" : "11224" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 5 }, { "date" : "11-09-2017", "grade" : "A", "score" : 7 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Riviera Caterer", "restaurant_id" : "40356018" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9b"), "address" : { "building" : "8825", "coord" : [ -73.8803827, 40.7643124 ], "street" : "Astoria Boulevard", "zipcode" : "11369" }, "borough" : "Queens", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "Z", "score" : 38 }, { "date" : "11-09-2017", "grade" : "A", "score" : 10 }, { "date" : "11-09-2017", "grade" : "A", "score" : 7 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 } ], "name" : "Brunos On The Boulevard", "restaurant_id" : "40356151" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9c"), "address" : { "building" : "2206", "coord" : [ -74.1377286, 40.6119572 ], "street" : "Victory Boulevard", "zipcode" : "10314" }, "borough" : "Staten Island", "cuisine" : "Jewish/Kosher", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 9 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 9 } ], "name" : "Kosher Island", "restaurant_id" : "40356442" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9d"), "address" : { "building" : "7114", "coord" : [ -73.9068506, 40.6199034 ], "street" : "Avenue U", "zipcode" : "11234" }, "borough" : "Brooklyn", "cuisine" : "Delicatessen", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 10 }, { "date" : "11-09-2017", "grade" : "A", "score" : 10 }, { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "A", "score" : 10 }, { "date" : "11-09-2017", "grade" : "A", "score" : 13 }, { "date" : "11-09-2017", "grade" : "A", "score" : 9 } ], "name" : "Wilken'S Fine Food", "restaurant_id" : "40356483" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9e"), "address" : { "building" : "6409", "coord" : [ -74.00528899999999, 40.628886 ], "street" : "11 Avenue", "zipcode" : "11219" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 }, { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 } ], "name" : "Regina Caterers", "restaurant_id" : "40356649" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9f"), "address" : { "building" : "1839", "coord" : [ -73.9482609, 40.6408271 ], "street" : "Nostrand Avenue", "zipcode" : "11226" }, "borough" : "Brooklyn", "cuisine" : "Ice Cream, Gelato, Yogurt, Ices", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "A", "score" : 5 }, { "date" : "11-09-2017", "grade" : "A", "score" : 8 } ], "name" : "Taste The Tropics Ice Cream", "restaurant_id" : "40356731" }
+{ "_id" : ObjectId("59d2ebec8938d50cf8b8fda3"), "address" : { "building" : "469", "coord" : [ -73.961704, 40.662942 ], "street" : "Flatbush Avenue", "zipcode" : "11225" }, "borough" : "Brooklyn", "cuisine" : "Category To Be Determined", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "B", "score" : 23 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Wendy'S", "restaurant_id" : "30112340", "lastModified" : ISODate("2017-10-03T02:05:02.045Z") }
+{ "_id" : ObjectId("59d2ebec8938d50cf8b8fda4"), "address" : { "building" : "351", "coord" : [ -73.98513559999999, 40.7676919 ], "street" : "West   57 Street", "zipcode" : "10019" }, "borough" : "Manhattan", "cuisine" : "Irish", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Dj Reynolds Pub And Restaurant", "restaurant_id" : "30191841" }
+Type "it" for more
+
+--------------------------------------------------------------------------------------------------------
+
+Cluster0-shard-0:PRIMARY> db.restaurants.find( { "cuisine": "Italian", "address.zipcode": "10075" } )
+{ "_id" : ObjectId("59d1b9c5eef10bdbf94f186d"), "address" : { "street" : "2 Avenue", "zipcode" : "10075", "building" : "1480", "coord" : [ -73.9557413, 40.7720266 ] }, "borough" : "Manhattan", "cuisine" : "Italian", "grades" : [ { "date" : ISODate("2014-10-01T00:00:00Z"), "grade" : "A", "score" : 11 }, { "date" : ISODate("2014-01-16T00:00:00Z"), "grade" : "B", "score" : 17 } ], "name" : "Vella", "restaurant_id" : "41704620" }
+{ "_id" : ObjectId("59d1c140eef10bdbf94f186e"), "address" : { "street" : "2 Avenue", "zipcode" : "10075", "building" : "1480", "coord" : [ -73.9557413, 40.7720266 ] }, "borough" : "Manhattan", "cuisine" : "Italian", "grades" : [ { "date" : ISODate("2014-10-01T00:00:00Z"), "grade" : "A", "score" : 11 }, { "date" : ISODate("2014-01-16T00:00:00Z"), "grade" : "B", "score" : 17 } ], "name" : "Vella", "restaurant_id" : "41704620" }
+
+---------------------------------------------------------------------------------------------------------
+
+Cluster0-shard-0:PRIMARY> db.restaurants.find(
+...    { $or: [ { "cuisine": "Italian" }, { "address.zipcode": "10075" } ] }
+... )
+{ "_id" : ObjectId("59d1b9c5eef10bdbf94f186d"), "address" : { "street" : "2 Avenue", "zipcode" : "10075", "building" : "1480", "coord" : [ -73.9557413, 40.7720266 ] }, "borough" : "Manhattan", "cuisine" : "Italian", "grades" : [ { "date" : ISODate("2014-10-01T00:00:00Z"), "grade" : "A", "score" : 11 }, { "date" : ISODate("2014-01-16T00:00:00Z"), "grade" : "B", "score" : 17 } ], "name" : "Vella", "restaurant_id" : "41704620" }
+{ "_id" : ObjectId("59d1c140eef10bdbf94f186e"), "address" : { "street" : "2 Avenue", "zipcode" : "10075", "building" : "1480", "coord" : [ -73.9557413, 40.7720266 ] }, "borough" : "Manhattan", "cuisine" : "Italian", "grades" : [ { "date" : ISODate("2014-10-01T00:00:00Z"), "grade" : "A", "score" : 11 }, { "date" : ISODate("2014-01-16T00:00:00Z"), "grade" : "B", "score" : 17 } ], "name" : "Vella", "restaurant_id" : "41704620" }
+
+---------------------------------------------------------------------------------------------------------
+Cluster0-shard-0:PRIMARY> db.restaurants.find().sort( { "borough": 1, "address.zipcode": 1 } )
+{ "_id" : ObjectId("59d30d4ee5111c47e8f0db5d"), "address" : { "building" : "1007", "coord" : [ -73.856077, 40.848447 ], "street" : "Morris Park Ave", "zipcode" : "10462" }, "borough" : "Bronx", "cuisine" : "Bakery", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 6 }, { "date" : "11-09-2017", "grade" : "A", "score" : 10 }, { "date" : "11-09-2017", "grade" : "A", "score" : 9 }, { "date" : "11-09-2017", "grade" : "B", "score" : 14 } ], "name" : "Morris Park Bake Shop", "restaurant_id" : "30075445" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb9e"), "address" : { "building" : "6409", "coord" : [ -74.00528899999999, 40.628886 ], "street" : "11 Avenue", "zipcode" : "11219" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 }, { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 } ], "name" : "Regina Caterers", "restaurant_id" : "40356649" }
+{ "_id" : ObjectId("59d2ebec8938d50cf8b8fdaa"), "address" : { "building" : "6409", "coord" : [ -74.00528899999999, 40.628886 ], "street" : "11 Avenue", "zipcode" : "11219" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 }, { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 } ], "name" : "Regina Caterers", "restaurant_id" : "40356649" }
+{ "_id" : ObjectId("59d30bb055713c268f61196e"), "address" : { "building" : "6409", "coord" : [ -74.00528899999999, 40.628886 ], "street" : "11 Avenue", "zipcode" : "11219" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 }, { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 } ], "name" : "Regina Caterers", "restaurant_id" : "40356649" }
+{ "_id" : ObjectId("59d30d4ee5111c47e8f0db65"), "address" : { "building" : "6409", "coord" : [ -74.00528899999999, 40.628886 ], "street" : "11 Avenue", "zipcode" : "11219" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 }, { "date" : "11-09-2017", "grade" : "A", "score" : 2 }, { "date" : "11-09-2017", "grade" : "A", "score" : 11 } ], "name" : "Regina Caterers", "restaurant_id" : "40356649" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb99"), "address" : { "building" : "2780", "coord" : [ -73.98241999999999, 40.579505 ], "street" : "Stillwell Avenue", "zipcode" : "11224" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 5 }, { "date" : "11-09-2017", "grade" : "A", "score" : 7 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Riviera Caterer", "restaurant_id" : "40356018" }
+{ "_id" : ObjectId("59d2ebec8938d50cf8b8fda5"), "address" : { "building" : "2780", "coord" : [ -73.98241999999999, 40.579505 ], "street" : "Stillwell Avenue", "zipcode" : "11224" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 5 }, { "date" : "11-09-2017", "grade" : "A", "score" : 7 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Riviera Caterer", "restaurant_id" : "40356018" }
+{ "_id" : ObjectId("59d30bb055713c268f611969"), "address" : { "building" : "2780", "coord" : [ -73.98241999999999, 40.579505 ], "street" : "Stillwell Avenue", "zipcode" : "11224" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 5 }, { "date" : "11-09-2017", "grade" : "A", "score" : 7 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Riviera Caterer", "restaurant_id" : "40356018" }
+{ "_id" : ObjectId("59d30d4ee5111c47e8f0db60"), "address" : { "building" : "2780", "coord" : [ -73.98241999999999, 40.579505 ], "street" : "Stillwell Avenue", "zipcode" : "11224" }, "borough" : "Brooklyn", "cuisine" : "American", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 5 }, { "date" : "11-09-2017", "grade" : "A", "score" : 7 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Riviera Caterer", "restaurant_id" : "40356018" }
+{ "_id" : ObjectId("59d2deee41754835b13bcb97"), "address" : { "building" : "469", "coord" : [ -73.961704, 40.662942 ], "street" : "Flatbush Avenue", "zipcode" : "11225" }, "borough" : "Brooklyn", "cuisine" : "Category To Be Determined", "grades" : [ { "date" : "11-09-2017", "grade" : "A", "score" : 8 }, { "date" : "11-09-2017", "grade" : "B", "score" : 23 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 }, { "date" : "11-09-2017", "grade" : "A", "score" : 12 } ], "name" : "Wendy'S", "restaurant_id" : "30112340", "lastModified" : ISODate("2017-10-03T02:05:02.045Z") }
+Type "it" for more

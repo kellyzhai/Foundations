@@ -1,0 +1,1 @@
+This project aimed at analyzing customers default payments in Taiwan and compares the predictive accuracy of default by using different classification methods, and pick the best one to make predictions.

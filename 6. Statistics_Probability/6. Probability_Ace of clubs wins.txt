@@ -1,0 +1,9 @@
+Ace of clubs wins. Consider the following card game with a wellshuffled
+deck of cards. If you draw a red card, you win nothing. If you
+get a spade, you win $5. For any club, you win $10 plus an extra $20
+for the ace of clubs.
+? (a) Create a probability model for the amount you win at this game.
+Also, find the expected winnings for a single game and the standard
+deviation of the winnings.
+? (b) What is the maximum amount you would be willing to pay to play
+this game? Explain your reasoning.

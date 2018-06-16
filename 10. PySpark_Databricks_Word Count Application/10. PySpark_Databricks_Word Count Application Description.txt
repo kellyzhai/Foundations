@@ -1,0 +1,10 @@
+Word Count Lab: Building a word count application
+
+In this lab, we will write code that calculates the most common words in the Complete Works of William Shakespeare retrieved from Project Gutenberg. This could also be scaled to larger applications, such as finding the most common words in Wikipedia.
+
+During this lab we will cover:
+
+Part 1: Creating a base DataFrame and performing operations
+Part 2: Counting with Spark SQL and DataFrames
+Part 3: Finding unique words and a mean value
+Part 4: Apply word count to a file

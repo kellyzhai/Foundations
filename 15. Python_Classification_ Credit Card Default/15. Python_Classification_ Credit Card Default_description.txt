@@ -1,0 +1,16 @@
+Split data into training (80%) and testing (20%)
+
+
+Study the ROC Curve, decide threshold
+Use 2 classifiers.
+
+Random Forest
+tune only: n_estimators: {4, 5, 10, 20, 50}
+
+KNN Classfier
+tune only: n_neighbors: {3, 5, 10, 20}
+
+Which one performs better in the cross validation?
+
+Cross-validation with 5-folds
+

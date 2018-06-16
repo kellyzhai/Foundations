@@ -1,0 +1,19 @@
+Cluster0-shard-0:PRIMARY> db.restaurants.createIndex( { "cuisine": 1 } )
+{
+        "createdCollectionAutomatically" : false,
+        "numIndexesBefore" : 1,
+        "numIndexesAfter" : 2,
+        "ok" : 1
+}
+
+------------------------------------------------------------------------
+Cluster0-shard-0:PRIMARY> db.restaurants.createIndex( { "cuisine": 1, "address.zipcode": -1 } )
+{
+        "createdCollectionAutomatically" : false,
+        "numIndexesBefore" : 2,
+        "numIndexesAfter" : 3,
+        "ok" : 1
+}
+
+------------------------------------------------------------------------
+Cluster0-shard-0:PRIMARY>
